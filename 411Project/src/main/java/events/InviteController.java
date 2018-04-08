@@ -11,9 +11,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class InviteController {
     
+    private InvitesView invites = new InvitesView();
+    private String html;
+    
     @RequestMapping("/invites")
     public String invites() {
-        return "View your invites";
+        html = invites.createInvitesView();
+        
+        return html;
     }
     
 }
