@@ -1,0 +1,5 @@
+events\Event.class
+events\Invite.class
+events\EventController.class
+events\InviteController.class
+events\ApplicationRun.class
