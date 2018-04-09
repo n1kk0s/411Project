@@ -1,5 +1,9 @@
-events\Event.class
+events\EventApplication.class
+events\Item.class
 events\Invite.class
-events\EventController.class
+events\Stylesheet.class
+events\User.class
 events\InviteController.class
-events\ApplicationRun.class
+events\Event.class
+events\InvitesView.class
+events\EventController.class
