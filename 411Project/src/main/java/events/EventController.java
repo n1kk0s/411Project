@@ -11,9 +11,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class EventController {
     
+    private LoginView login = new LoginView();
+    private String html;
+    
     @RequestMapping("/")
-    public String index() {
-        return "This is the index";
+    public String login() {
+        html = login.createLoginView();
+        
+        return html;
     }
     
     @RequestMapping("/create")

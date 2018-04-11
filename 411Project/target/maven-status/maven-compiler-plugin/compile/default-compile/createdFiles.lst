@@ -4,6 +4,8 @@ events\Invite.class
 events\Stylesheet.class
 events\User.class
 events\InviteController.class
+events\LoginView.class
 events\Event.class
 events\InvitesView.class
 events\EventController.class
+events\LoginController.class
