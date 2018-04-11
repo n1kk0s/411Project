@@ -12,11 +12,19 @@ import org.springframework.web.bind.annotation.RestController;
 public class EventController {
     
     private LoginView login = new LoginView();
+    private SignUpView signup = new SignUpView();
     private String html;
     
     @RequestMapping("/")
     public String login() {
         html = login.createLoginView();
+        
+        return html;
+    }
+    
+    @RequestMapping("/signup")
+    public String signUp() {
+        html = signup.createSignUpView();
         
         return html;
     }

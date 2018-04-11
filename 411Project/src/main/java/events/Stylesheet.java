@@ -22,7 +22,7 @@ public class Stylesheet {
                 + "margin: 0 auto;"
                 +"width: 50rem;"
                 +"font-family: \"Helvetica\", \"Trebuchet\", \"Arial\", sans-serif;"
-                +"color: #fefefe;"
+                +"color: #757575;"
                 +"line-height: 1.5;"
                 +"padding:4rem 1rem;"
                 +"}"
@@ -33,7 +33,7 @@ public class Stylesheet {
                 +"}"
                 // H1, H2, Strong Styles
                 +"h1, h2, strong {"
-                +"color: #333;"
+                + "color: #9C27B0;"
                 +"}"
                 // Button Styling
                 + ".button {"
@@ -48,7 +48,9 @@ public class Stylesheet {
                 + "}"
                 // Button Hover Styles
                 + ".button:hover {"
-                + "background-color: #AB47BC;"// Light
+                + "background-color: #CE93D8;"// Light
+                + "-webkit-transition: 0.5s;"
+                + "transition: 0.5s;"
                 + "}"
                 // FormField Styling
                 + ".formField {"
@@ -56,7 +58,7 @@ public class Stylesheet {
                 + "margin: 0 auto;"
                 + "padding: 10px 15px;"
                 + "width: 35%;"
-                + "border: solid 3px #AB47BC;"
+                + "border: solid 3px #CE93D8;"
                 + "border-radius: 5px;"
                 + "box-sizing: border-box;"
                 + "}"
@@ -64,14 +66,25 @@ public class Stylesheet {
                 + ".formField:focus {"
                 + "outline: none;"
                 + "border: solid 3px #9C27B0;"
-                + "-webkit-transition: 0.5s"
+                + "-webkit-transition: 0.5s;"
+                + "transition: 0.5s;"
                 + "}"
                 // Heading Div Styling
                 + ".heading {"
                 + "margin: 0 auto;"
                 + "display: block;"
-                + "text-align: none;"
+                + "text-align: center;"
+                + "}"
+                // Link Styling
+                + "a {"
                 + "color: #9C27B0;"
+                + "}"
+                // FormField Label Styling
+                + "label {"
+                + "text-align:left;"
+                + "margin-bottom: 0;"
+                + "padding-bottom: 0;"
+                + "}"
                 
                 + "</style>";
         
