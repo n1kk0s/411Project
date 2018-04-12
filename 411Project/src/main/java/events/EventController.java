@@ -13,6 +13,9 @@ public class EventController {
     
     private LoginView login = new LoginView();
     private SignUpView signup = new SignUpView();
+    private CreateEventView create = new CreateEventView();
+    private EventView event = new EventView();
+    private YourEventsView yourEvents = new YourEventsView();
     private String html;
     
     @RequestMapping("/")
@@ -31,17 +34,22 @@ public class EventController {
     
     @RequestMapping("/create")
     public String create() {
-        return "Create an event";
+        html = create.createCreateEventView();
+        return html;
     }
     
     @RequestMapping("/events")
     public String events() {
-        return "View your created events";
+        html = yourEvents.createYourEventsView();
+        
+        return html;
     }
     
-    @RequestMapping("/party")
-    public String party() {
-        return "View a party's details";
+    @RequestMapping("/event")
+    public String event() {
+        html = event.createEventView();
+        
+        return html;
     }
     
 }

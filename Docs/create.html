@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+  <title>Create Event</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+  <div class='panelDiv'>
+    <h2>user.getfName()</h2>
+    <a class='button' href='/invites'>View Invites</a>
+    <a class='button' href='/events'>Your Events</a>
+    <a class='button' href='/create'>Create Event</a>
+    <a class='button' href='/'>Log Out</a>
+  </div>
+
+  <div class='contentDiv'>
+    <div class='heading'>
+      <h1 class='heading'>Create an Event</h1>
+    <form>
+      <label for='eventName'>Event Name</label>
+      <input class='formField' type='text' name='eventName' placeholder="Zach's Birthday" required><br>
+        <label for='date'>Date and Time</label>
+      <input class='formField' type='datetime-local' name='date' required><br>
+        <label for='location'>Location</label>
+      <input class='formField' type='text' name='location' placeholder="123 Street, Home City, PA" required><br>
+        <label for='description'>Description</label>
+      <textarea class='formField' name='description' required></textarea><br>
+        <label for='guests'>Guests</label>
+      <input class='formField' type='text' name='guests' placeholder="Separate usernames with commas" required>
+      <input id='createSubmit' class='accountButton' type='submit' value="Create Event">
+    </form>
+
+    </div>
+  </div>
+  </div>
+
+</body>
+</html>
